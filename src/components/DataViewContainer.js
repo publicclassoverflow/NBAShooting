@@ -1,4 +1,5 @@
 import React from 'react';
+import _ from 'lodash';
 import { Row, Col } from 'antd';
 import { ShotChart } from "./ShotChart"
 import { CountSlider } from "./CountSlider"
@@ -20,7 +21,7 @@ export class DataViewContainer extends React.Component {
           <Row className="filter-row">
             <Col span={2} offset={3} className="filter-label">Shots: </Col>
             <Col span={16} className="filter-control">
-              <CountSlider onMinCountChange={this.onMinCountChange}/>
+              <CountSlider onMinCountChange={_.debounce(this.onMinCountChange, 500)}/>
             </Col>
           </Row>
         </div>
