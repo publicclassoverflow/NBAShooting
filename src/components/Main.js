@@ -1,13 +1,13 @@
 import React from 'react';
 import nba from 'nba';
-import { ShotChart } from "./ShotChart";
-import { Profile } from "./Profile";
+import {Profile} from "./Profile";
+import {DataViewContainer} from "./DataViewContainer";
 
 export class Main extends React.Component {
   state = {
     // playerId: nba.findPlayer('Vince Carter').playerId, // Vince Carter used for instance
-    playerId: nba.findPlayer('Kawhi Leonard').playerId, // Kawhi Leonard used for instance
-    // playerId: nba.findPlayer('Stephen Curry').playerId, // Steph used for instance
+    // playerId: nba.findPlayer('Kawhi Leonard').playerId, // Kawhi Leonard used for instance
+    playerId: nba.findPlayer('Stephen Curry').playerId, // Steph used for instance
     playerInfo: {},
   }
 
@@ -27,7 +27,7 @@ export class Main extends React.Component {
     return (
       <div className="main">
         <Profile playerId={this.state.playerId} playerInfo={this.state.playerInfo}/>
-        <ShotChart playerId={this.state.playerId}/>
+        <DataViewContainer playerId={this.state.playerId}/>
       </div>
     );
   }
