@@ -16,7 +16,8 @@ export class ShotChart extends React.Component {
   componentDidUpdate() {
     nba.stats.shots({
       PlayerID: this.props.playerId,
-      Season: '2016-17',
+      Season: '2015-16',
+      // Season: '2018-19',
     }).then((response) => {
       console.log(response);
       const final_shots = response.shot_Chart_Detail.map(shot => ({
