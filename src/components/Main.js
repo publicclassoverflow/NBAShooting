@@ -6,8 +6,8 @@ import {DataViewContainer} from "./DataViewContainer";
 export class Main extends React.Component {
   state = {
     // playerId: nba.findPlayer('Vince Carter').playerId, // Vince Carter used for instance
-    // playerId: nba.findPlayer('Kawhi Leonard').playerId, // Kawhi Leonard used for instance
-    playerId: nba.findPlayer('Stephen Curry').playerId, // Steph used for instance
+    playerId: nba.findPlayer('Kawhi Leonard').playerId, // Kawhi Leonard used for instance
+    // playerId: nba.findPlayer('Stephen Curry').playerId, // Steph used for instance
     playerInfo: {},
   }
 
