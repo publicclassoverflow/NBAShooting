@@ -9,6 +9,11 @@
   box-sizing: border-box;
 }
 
+.player-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .profile-entry {
   display: flex;
   align-items: center;
@@ -32,9 +37,4 @@
 
 .team-logo {
   width: 50%;
-}
-
-.player-name {
-  font-size: 20px;
-  font-weight: bold;
 }
