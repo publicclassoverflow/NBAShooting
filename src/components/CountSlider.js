@@ -3,7 +3,7 @@ import { Slider, InputNumber, Row, Col } from 'antd';
 
 export class CountSlider extends React.Component {
   state = {
-    inputValue: 2,
+    inputValue: 3,  // Default number of shots count set to 3
   }
 
   onChange = (value) => {
