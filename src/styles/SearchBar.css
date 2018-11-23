@@ -1,4 +1,16 @@
 .search-bar {
   width: 100%;
   margin-bottom: 30px;
+  font-family: "Ubuntu Light", sans-serif;
+}
+
+.player-option-image {
+  height: 32px;
+  margin-right: 20px;
+}
+
+.player-option-label {
+  font-size: 15px;
+  font-family: "Ubuntu Light", sans-serif
+  /*font-family: "Product Sans", sans-serif*/
 }
