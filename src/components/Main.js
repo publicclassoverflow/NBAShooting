@@ -2,10 +2,11 @@ import React from 'react';
 import nba from 'nba';
 import {Profile} from "./Profile";
 import {DataViewContainer} from "./DataViewContainer";
+import { SearchBar } from "./SearchBar";
 
 export class Main extends React.Component {
   state = {
-    // playerId: nba.findPlayer('Vince Carter').playerId, // Vince Carter used for instance
+    // playerId: nba.findPlayer('Vince Carter').playerId,  // Vince Carter used for instance
     playerId: nba.findPlayer('Kawhi Leonard').playerId, // Kawhi Leonard used for instance
     // playerId: nba.findPlayer('Stephen Curry').playerId, // Steph used for instance
     playerInfo: {},
@@ -26,8 +27,11 @@ export class Main extends React.Component {
   render() {
     return (
       <div className="main">
-        <Profile playerId={this.state.playerId} playerInfo={this.state.playerInfo}/>
-        <DataViewContainer playerId={this.state.playerId}/>
+        <SearchBar/>
+        <div className="player">
+          <Profile playerId={this.state.playerId} playerInfo={this.state.playerInfo}/>
+          <DataViewContainer playerId={this.state.playerId}/>
+        </div>
       </div>
     );
   }
