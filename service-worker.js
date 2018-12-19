@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/NBAShooting/precache-manifest.bca84cc2630fe4c07a07f7960fb7e0d9.js"
+  "/NBAShooting/precache-manifest.23aa793a28467bcd42dd053074adb295.js"
 );
 
 workbox.clientsClaim();
